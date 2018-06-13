@@ -325,3 +325,25 @@ sudo apt-get update
 sudo apt-get install nvidia-3??
 sudo apt-mark hold nvidia-3??
 ```
+```
+sudo apt-get install linux-headers-$(uname -r)
+```
+Качаем [саму куду](https://developer.nvidia.com/cuda-downloads)
+
+Ставьте при это локал .deb пакеты. Либо вы качаете локал дебики, либо вы сами локал дебики.
+
+```
+sudo dpkg -i cuda-repo-<distro>_<version>_<architecture>.deb
+sudo apt-key add /var/cuda-repo-<version>/7fa2af80.pub
+sudo apt-get update
+sudo apt-get install cuda
+```
+
+# cuDNN
+
+Кочаем [кудынн](https://developer.nvidia.com/rdp/cudnn-download) (ну и как бы зарегайтесь, если еще не регались. Или залогиньтесь, если регались)
+
+Кочаем и ставим в етом же порядке:
+* рантайм либу, `Runtime Library for Ubuntu16.04 (Deb)`
+* дев либу, `Developer Library for Ubuntu16.04 (Deb)`
+* ну и код семлы, если вам делать нех, а место на диске занять хочется `Code Samples and User Guide for Ubuntu16.04 (Deb)`
