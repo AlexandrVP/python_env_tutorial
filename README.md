@@ -302,3 +302,25 @@ TBD
 # Docker
 
 TBD
+
+# nvidia driver + CUDA
+
+```
+sudo nano /etc/modprobe.d/blacklist.conf
+```
+```
+blacklist nouveau
+blacklist lbm-nouveau
+options nouveau modeset=0
+alias nouveau off
+alias lbm-nouveau off
+```
+```
+sudo apt-get remove --purge nvidia-*
+sudo apt-add-repository ppa:graphics-drivers/ppa
+sudo apt-get update
+```
+
+```
+sudo apt-get install nvidia-3??
+```
