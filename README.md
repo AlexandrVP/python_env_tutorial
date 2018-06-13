@@ -347,3 +347,7 @@ sudo apt-get install cuda
 * рантайм либу, `Runtime Library for Ubuntu16.04 (Deb)`
 * дев либу, `Developer Library for Ubuntu16.04 (Deb)`
 * ну и код семлы, если вам делать нех, а место на диске занять хочется `Code Samples and User Guide for Ubuntu16.04 (Deb)`
+
+* `sudo dpkg -i libcudnn7*.deb`
+* `sudo dpkg -i libcudnn7-dev*.deb`
+* `sudo dpkg -i libcudnn7-doc*.deb`
