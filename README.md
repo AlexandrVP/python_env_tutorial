@@ -323,4 +323,5 @@ sudo apt-get update
 
 ```
 sudo apt-get install nvidia-3??
+sudo apt-mark hold nvidia-3??
 ```
